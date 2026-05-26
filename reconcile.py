@@ -2,8 +2,8 @@
 
 import pandas as pd
 
-platform = pd.read_csv("data/platform_transactions.csv")
-bank = pd.read_csv("data/bank_settlements.csv")
+platform = pd.read_csv("platform_transactions.csv")
+bank = pd.read_csv("bank_settlements.csv")
 
 issues = []
 
@@ -59,4 +59,4 @@ report = pd.DataFrame(issues)
 
 print(report)
 
-report.to_csv("data/reconciliation_report.csv", index=False)
+report.to_csv("reconciliation_report.csv", index=False)
