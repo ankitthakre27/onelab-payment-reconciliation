@@ -2,9 +2,9 @@
 import streamlit as st
 import pandas as pd
 
-report = pd.read_csv("data/reconciliation_report.csv")
+report = pd.read_csv("reconciliation_report.csv")
 
-platform = pd.read_csv("data/platform_transactions.csv")
+platform = pd.read_csv("platform_transactions.csv")
 
 total_transactions = len(platform)
 total_issues = len(report)
