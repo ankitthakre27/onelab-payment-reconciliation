@@ -32,12 +32,3 @@ st.metric(
     "Reconciliation Accuracy",
     f"{accuracy:.2f}%"
 )
-
-st.subheader("Assumptions")
-
-st.write("""
-- Settlements may occur 1-2 days after transaction date.
-- Transaction IDs should normally be unique.
-- Refunds must map to valid original transactions.
-- Small rounding differences are tolerated up to 0.01.
-""")
